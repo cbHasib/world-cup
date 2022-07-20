@@ -1,6 +1,30 @@
+/*==========================================================================
+|**                       Coded by Hasibul Hasan                         **|
+|**                        hasibul.pbn@gmail.com                         **|
+|**                   https://www.facebook.com/cbHasib                   **|
+|**                      https://github.com/cbHasib                      **|
+|**                                                                      **|
+|**                     ~~~~~ Table of Content: ~~~~~                    **|
+|**      1. Import Google Font (Line: 26)                                **|
+|**      2. Reset Default Margin Padding (Line: 30)                      **|
+|**      3. Global Style Value (Line: 40)                                **|
+|**      4. Common/Utility Style (Line: 64)                              **|
+|**      5. Hero Section Style (Line: 120)                               **|
+|**      6. Body Item Container Style (Line: 160)                        **|
+|**      7. News Item Style (Line: 230)                                  **|
+|**      8. Match Fixing Schedule Style (Line: 290)                      **|
+|**      9. All Group Item Style (Line: 350)                             **|
+|**      10. Footer Style (Line: 415)                                    **|
+|**      11. Responsive Style For Mobile Device (Line: 485)              **|
+|**      12. Responsive Style For Landscape Mobile Device (Line: 570)    **|
+|**      13. Responsive Style For Tablet Device (Line: 640)              **|
+|**      14.  Responsive Style For Laptop Device (Line: 715)             **|
+|**      15.  Responsive Style For Large Laptop Device (Line: 735)       **|
+==========================================================================*/
+
+
 /* Import Font from GOOGLE  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 
 /* --------------------------------
  Reset Default Margin Padding 
@@ -10,7 +34,6 @@
     margin: 0;
     padding: 0;
 }
-
 
 
 /* -----------------------
@@ -38,9 +61,8 @@ body {
 
 
 /* --------------------------------
-###### Common/Utility Style  ######
+     Common/Utility Style   
 -------------------------------- */
-
 .container {
     display: flex;
     justify-content: center;
@@ -54,8 +76,6 @@ body {
 a {
     text-decoration: none;
 }
-
-
 
 .button {
     display: inline-block;
@@ -89,7 +109,6 @@ a {
 
 
 /* Main Body Style  Start */
-
 main {
     padding: 2% 5%;
 }
@@ -97,12 +116,9 @@ main {
 
 
 
-
-
 /* ----------------------------
  Hero Section Style Start
 ---------------------------- */
-
 .hero {
     background-color: var(--item-bg-color);
     border-radius: 30px;
@@ -139,16 +155,16 @@ main {
 ---------------------------- */
 
 
+
 /* ---------------------------------
 Body Item Container Style Start
 --------------------------------- */
-
 .wraper-container {
     display: grid;
 
- /*  ****** Flexible Sidebar ******
+    /*  ****** Flexible Sidebar ******
     grid-template-columns: 3fr 9fr; 
-*/ 
+*/
 
     grid-template-columns: 320px 1fr;
     gap: 24px;
@@ -211,14 +227,14 @@ Body Item Container Style Start
 }
 
 
-
 /* News Item Style  */
 .news-item {
     border: 1px solid #E8E8E8;
     border-radius: 10px;
     transition: box-shadow ease-in-out 250ms;
 }
-.news-item:hover{
+
+.news-item:hover {
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -268,6 +284,9 @@ Body Item Container Style Start
 }
 
 
+
+
+
 /* Match Fixing Schedule Style  */
 .match-item {
     display: flex;
@@ -280,7 +299,8 @@ Body Item Container Style Start
     text-align: center;
     transition: box-shadow ease-in-out 250ms;
 }
-.match-item:hover{
+
+.match-item:hover {
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -291,13 +311,13 @@ Body Item Container Style Start
     align-items: center;
 }
 
-.match-thumbnail img{
+.match-thumbnail img {
     width: 100%;
     border: 1px solid #E8E8E8;
 }
 
 
-.match-thumbnail h3{
+.match-thumbnail h3 {
     font-weight: 700;
     font-size: 16px;
     color: var(--item-bg-color);
@@ -327,9 +347,6 @@ Body Item Container Style Start
 
 
 
-
-
-
 /* All Group Item Style  */
 .group-item {
     display: flex;
@@ -342,16 +359,17 @@ Body Item Container Style Start
     row-gap: 20px;
     transition: box-shadow ease-in-out 250ms;
 }
-.group-item:hover{
+
+.group-item:hover {
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
-.group-name p{
+.group-name p {
     font-weight: 600;
     font-size: 1.3em;
 }
 
-.group-detail{
+.group-detail {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -359,7 +377,7 @@ Body Item Container Style Start
     row-gap: 15px;
 }
 
-.group-country{
+.group-country {
     height: 3.5em;
     padding: 10px 20px;
     display: flex;
@@ -371,30 +389,23 @@ Body Item Container Style Start
     transition: background-color ease-in-out 250ms;
 }
 
-.group-country:hover{
+.group-country:hover {
     background-color: #bee7ff;
 }
 
-.group-country-code{
+.group-country-code {
     font-weight: 600;
 }
 
-.group-country img{
+.group-country img {
     width: 16%;
     border: 1px solid #dd00002d;
 }
-.group-country-name{
+
+.group-country-name {
     font-weight: 500;
 }
-
-
-
-/* ---------------------------------
-Body Item Container Style End
---------------------------------- */
-
-
-
+/* Body Item Container Style End */
 /* Main Body Style  End */
 
 
@@ -442,12 +453,11 @@ footer {
     color: #B9B9B9;
 
 }
+
 .footer-menu-items .menu-item a:hover {
     color: var(--color-white);
 
 }
-
-
 
 .icons .fa-brands {
     color: var(--color-white);
@@ -463,8 +473,6 @@ footer {
     color: var(--primary-color);
     transition: all ease-in 200ms;
 }
-
-
 /* Footer Style End  */
 
 
@@ -483,71 +491,54 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-
     .half-width {
         width: 100%;
     }
-
-
-
     .button {
         padding: 8px 20px;
     }
-
-
 
     /* Hero Section Style */
     .hero {
         padding: 40px 38px 0px;
     }
-
     .half-width h1 {
         font-size: 2em;
         line-height: 33px;
     }
-
     .half-width p {
         font-size: 14px;
         line-height: 24px;
         margin: 8px 0px 16px;
     }
-
     .half-width img {
         margin: 25px 0 0 0;
     }
-
-    #single-player{
+    #single-player {
         margin-bottom: -7px;
     }
-
-
 
     /* Body  */
     .wraper-container {
         grid-template-columns: 1fr;
         margin: 0;
     }
-
     .news-item-box {
         grid-template-columns: repeat(1, 1fr);
         gap: 24px;
     }
-
-
     .side-menu {
         background-color: var(--color-white);
         border-radius: none;
         row-gap: 30px;
         position: static;
     }
-
     .side-menu-item {
         width: auto;
         font-size: 18px;
         padding: 12px 45px;
         border: 2px solid #E8E8E8;
     }
-
     .side-menu-item:hover {
         background-color: var(--primary-color);
         border-color: var(--primary-color);
@@ -556,17 +547,13 @@ footer {
 
     #active {
         padding: 12px 45px;
-
     }
-
     #active:hover {
         border-color: var(--primary-color);
     }
 
-
-
     /* Footer  */
-    footer{
+    footer {
         margin-top: 50px;
     }
     .footer-menu-items {
@@ -577,35 +564,28 @@ footer {
 
 
 
+
+
 /* ------------------------------------------------
  Responsive Style For Landscape Mobile Device
 ------------------------------------------------ */
 @media only screen and (min-width: 576.1px) and (max-width: 767px) {
 
     /* Common Style  */
-    
     .button {
         padding: 8px 20px;
     }
 
-
-
     /* Hero Section Style */
-
-
     .half-width h1 {
         font-size: 1.8em;
         line-height: 33px;
     }
-
     .half-width p {
         font-size: 14px;
-        line-height: 24px; 
+        line-height: 24px;
         margin: 8px 0px 14px;
     }
-    
-
-
 
     /* Body  */
     .wraper-container {
@@ -613,27 +593,20 @@ footer {
         margin: 0;
         row-gap: 0;
     }
-
     .news-item-box {
         grid-template-columns: repeat(2, 1fr);
     }
-
-
     .side-menu {
         background-color: var(--color-white);
-        position: static;   
-        padding: 50px 0px 30px 0px;   
-         
+        position: static;
+        padding: 50px 0px 30px 0px;
     }
-
-
     .side-menu-item {
         width: 100%;
         font-size: 18px;
         padding: 12px 45px;
         border: 2px solid #E8E8E8;
     }
-
     .side-menu-item:hover {
         background-color: var(--primary-color);
         border-color: var(--primary-color);
@@ -642,17 +615,13 @@ footer {
 
     #active {
         padding: 12px 60px;
-
     }
-
     #active:hover {
         border-color: var(--primary-color);
     }
 
-
-
     /* Footer  */
-    footer{
+    footer {
         margin-top: 50px;
     }
     .footer-menu-items {
@@ -666,13 +635,13 @@ footer {
 
 
 
+
 /* ------------------------------------------
  Responsive Style For Tablet Device
 ------------------------------------------ */
 @media only screen and (min-width: 767.1px) and (max-width: 991px) {
 
     /* Common Style  */
-    
     .button {
         padding: 8px 20px;
     }
@@ -684,23 +653,16 @@ footer {
         margin: 50px 0;
     }
 
-
-
     /* Hero Section Style */
-
     .half-width h1 {
         font-size: 2.5em;
         line-height: 45px;
     }
-
     .half-width p {
         font-size: 14px;
-        line-height: 24px; 
+        line-height: 24px;
         margin: 8px 0px 14px;
     }
-    
-
-
 
     /* Body  */
     .wraper-container {
@@ -708,28 +670,21 @@ footer {
         margin: 0;
         row-gap: 0;
     }
-
     .news-item-box {
         grid-template-columns: repeat(2, 1fr);
     }
-
-
     .side-menu {
         flex-direction: row;
         background-color: var(--color-white);
-        position: static;   
+        position: static;
         column-gap: 22px;
-        padding: 50px 0px 30px 0px;   
-         
+        padding: 50px 0px 30px 0px;
     }
-
     .side-menu-item {
         width: auto;
         font-size: 18px;
         border: 2px solid #E8E8E8;
-        
     }
-
     .side-menu-item:hover {
         background-color: var(--primary-color);
         border-color: var(--primary-color);
@@ -738,14 +693,10 @@ footer {
 
     #active {
         padding: 12px 60px;
-
     }
-
     #active:hover {
         border-color: var(--primary-color);
     }
-
-
 
     /* Footer  */
     .footer-menu-items {
@@ -755,6 +706,7 @@ footer {
         justify-content: center;
     }
 }
+
 
 
 
@@ -769,7 +721,6 @@ footer {
         font-size: 2.5em;
         line-height: 50px;
     }
-    
 
     /* Body  */
     .news-item-box {
