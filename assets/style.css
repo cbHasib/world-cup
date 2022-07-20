@@ -692,7 +692,7 @@ footer {
     }
 
     #active {
-        padding: 12px 60px;
+        padding: 17px 60px;
     }
     #active:hover {
         border-color: var(--primary-color);
