@@ -145,7 +145,12 @@ Body Item Container Style Start
 
 .wraper-container {
     display: grid;
-    grid-template-columns: 3fr 9fr;
+
+ /*  ****** Flexible Sidebar ******
+    grid-template-columns: 3fr 9fr; 
+*/ 
+
+    grid-template-columns: 320px 1fr;
     gap: 24px;
     margin: 70px 0;
 }
@@ -509,7 +514,10 @@ footer {
 
     .half-width img {
         margin: 25px 0 0 0;
+    }
 
+    #single-player{
+        margin-bottom: -7px;
     }
 
 
@@ -572,7 +580,7 @@ footer {
 /* ------------------------------------------------
  Responsive Style For Landscape Mobile Device
 ------------------------------------------------ */
-@media only screen and (min-width: 577px) and (max-width: 767px) {
+@media only screen and (min-width: 576.1px) and (max-width: 767px) {
 
     /* Common Style  */
     
@@ -661,7 +669,7 @@ footer {
 /* ------------------------------------------
  Responsive Style For Tablet Device
 ------------------------------------------ */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 767.1px) and (max-width: 991px) {
 
     /* Common Style  */
     
@@ -754,7 +762,7 @@ footer {
 /* ------------------------------------------
  Responsive Style For Laptop Device
 ------------------------------------------ */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 991.1px) and (max-width: 1200px) {
 
     /* Hero Section Style */
     .half-width h1 {
