@@ -647,8 +647,10 @@ footer {
         margin-top: 50px;
     }
     .footer-menu-items {
-        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
         row-gap: 25px;
+        justify-content: center;
     }
 }
 
@@ -738,8 +740,10 @@ footer {
 
     /* Footer  */
     .footer-menu-items {
-        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
         row-gap: 25px;
+        justify-content: center;
     }
 }
 
