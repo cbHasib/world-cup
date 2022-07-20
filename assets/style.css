@@ -618,11 +618,12 @@ footer {
          
     }
 
+
     .side-menu-item {
         width: 100%;
         font-size: 18px;
+        padding: 12px 45px;
         border: 2px solid #E8E8E8;
-        
     }
 
     .side-menu-item:hover {
