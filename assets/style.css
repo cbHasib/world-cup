@@ -321,6 +321,69 @@ Body Item Container Style Start
 }
 
 
+
+
+
+
+/* All Group Item Style  */
+.group-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 40px 30px;
+    row-gap: 20px;
+    transition: box-shadow ease-in-out 250ms;
+}
+.group-item:hover{
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.group-name p{
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.group-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.group-country{
+    height: 3.5em;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #eeeee4;
+    border-radius: 10px;
+    column-gap: 20px;
+    transition: background-color ease-in-out 250ms;
+}
+
+.group-country:hover{
+    background-color: #bee7ff;
+}
+
+.group-country-code{
+    font-weight: 600;
+}
+
+.group-country img{
+    width: 16%;
+    border: 1px solid #dd00002d;
+}
+.group-country-name{
+    font-weight: 500;
+}
+
+
+
 /* ---------------------------------
 Body Item Container Style End
 --------------------------------- */
@@ -374,6 +437,10 @@ footer {
     color: #B9B9B9;
 
 }
+.footer-menu-items .menu-item a:hover {
+    color: var(--color-white);
+
+}
 
 
 
@@ -417,6 +484,7 @@ footer {
     }
 
 
+
     .button {
         padding: 8px 20px;
     }
@@ -440,7 +508,8 @@ footer {
     }
 
     .half-width img {
-        margin-top: 25px;
+        margin: 25px 0 0 0;
+
     }
 
 
@@ -478,7 +547,7 @@ footer {
     }
 
     #active {
-        padding: 12px 60px;
+        padding: 12px 45px;
 
     }
 
