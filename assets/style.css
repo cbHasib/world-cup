@@ -51,6 +51,10 @@ body {
     width: 50%;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 
 .button {
@@ -79,10 +83,7 @@ body {
 }
 
 #view-all-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0;
+    display: none;
 }
 
 
@@ -129,7 +130,7 @@ main {
 }
 
 .half-width img {
-    height: 80%;
+    width: 90%;
     margin: 0 0 -7px 8%;
 }
 
@@ -336,7 +337,9 @@ footer {
 
 
 
-/* Responsive Style  */
+/* ------------------------------------------
+ Responsive Style For Mobile Device
+------------------------------------------ */
 @media only screen and (max-width: 576px) {
 
     /* Common Style  */
@@ -350,15 +353,19 @@ footer {
     }
 
 
+    .button {
+        padding: 8px 20px;
+    }
 
-    /* Hero Section Style Start */
 
+
+    /* Hero Section Style */
     .hero {
-         padding: 40px 38px 0px;
+        padding: 40px 38px 0px;
     }
 
     .half-width h1 {
-        font-size: 25px;
+        font-size: 2em;
         line-height: 33px;
     }
 
@@ -369,35 +376,278 @@ footer {
     }
 
     .half-width img {
-        width: 90%;
         margin-top: 25px;
     }
-
-
-
-
-
 
 
 
     /* Body  */
     .wraper-container {
         grid-template-columns: 1fr;
+        margin: 0;
     }
 
     .news-item-box {
-        
         grid-template-columns: repeat(1, 1fr);
         gap: 24px;
     }
 
 
+    .side-menu {
+        background-color: var(--color-white);
+        border-radius: none;
+        row-gap: 30px;
+        position: static;
+    }
+
+    .side-menu-item {
+        width: auto;
+        font-size: 18px;
+        padding: 12px 45px;
+        border: 2px solid #E8E8E8;
+    }
+
+    .side-menu-item:hover {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        color: var(--color-white);
+    }
+
+    #active {
+        padding: 12px 60px;
+
+    }
+
+    #active:hover {
+        border-color: var(--primary-color);
+    }
 
 
 
     /* Footer  */
-    .footer-menu-items{
+    footer{
+        margin-top: 50px;
+    }
+    .footer-menu-items {
         flex-direction: column;
         row-gap: 25px;
+    }
+}
+
+
+
+/* ------------------------------------------------
+ Responsive Style For Landscape Mobile Device
+------------------------------------------------ */
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+
+    /* Common Style  */
+    
+    .button {
+        padding: 8px 20px;
+    }
+
+
+
+    /* Hero Section Style */
+
+
+    .half-width h1 {
+        font-size: 1.8em;
+        line-height: 33px;
+    }
+
+    .half-width p {
+        font-size: 14px;
+        line-height: 24px; 
+        margin: 8px 0px 14px;
+    }
+    
+
+
+
+    /* Body  */
+    .wraper-container {
+        grid-template-columns: 1fr;
+        margin: 0;
+        row-gap: 0;
+    }
+
+    .news-item-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .side-menu {
+        background-color: var(--color-white);
+        position: static;   
+        padding: 50px 0px 30px 0px;   
+         
+    }
+
+    .side-menu-item {
+        width: 100%;
+        font-size: 18px;
+        border: 2px solid #E8E8E8;
+        
+    }
+
+    .side-menu-item:hover {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        color: var(--color-white);
+    }
+
+    #active {
+        padding: 12px 60px;
+
+    }
+
+    #active:hover {
+        border-color: var(--primary-color);
+    }
+
+
+
+    /* Footer  */
+    footer{
+        margin-top: 50px;
+    }
+    .footer-menu-items {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+}
+
+
+
+
+/* ------------------------------------------
+ Responsive Style For Tablet Device
+------------------------------------------ */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* Common Style  */
+    
+    .button {
+        padding: 8px 20px;
+    }
+
+    #view-all-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+
+
+    /* Hero Section Style */
+
+    .half-width h1 {
+        font-size: 2.5em;
+        line-height: 45px;
+    }
+
+    .half-width p {
+        font-size: 14px;
+        line-height: 24px; 
+        margin: 8px 0px 14px;
+    }
+    
+
+
+
+    /* Body  */
+    .wraper-container {
+        grid-template-columns: 1fr;
+        margin: 0;
+        row-gap: 0;
+    }
+
+    .news-item-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .side-menu {
+        flex-direction: row;
+        background-color: var(--color-white);
+        position: static;   
+        column-gap: 22px;
+        padding: 50px 0px 30px 0px;   
+         
+    }
+
+    .side-menu-item {
+        width: auto;
+        font-size: 18px;
+        border: 2px solid #E8E8E8;
+        
+    }
+
+    .side-menu-item:hover {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        color: var(--color-white);
+    }
+
+    #active {
+        padding: 12px 60px;
+
+    }
+
+    #active:hover {
+        border-color: var(--primary-color);
+    }
+
+
+
+    /* Footer  */
+    .footer-menu-items {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+}
+
+
+
+
+/* ------------------------------------------
+ Responsive Style For Laptop Device
+------------------------------------------ */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /* Hero Section Style */
+    .half-width h1 {
+        font-size: 2.5em;
+        line-height: 50px;
+    }
+    
+
+    /* Body  */
+    .news-item-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+/* ---------------------------------------------
+ Responsive Style For Large Laptop Device
+--------------------------------------------- */
+@media only screen and (min-width: 1201px) and (max-width: 1450px) {
+
+    /* Hero Section Style */
+    .half-width h1 {
+        font-size: 3.5em;
+        line-height: 70px;
+    }
+
+
+    /* Body  */
+    .news-item-box {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
